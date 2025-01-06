@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ellie Project</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            background-color: #f3f8fc;
+            color: #333;
+        }
+        header {
+            background-color: #6b7db3;
+            padding: 20px;
+            text-align: center;
+            color: white;
+            font-size: 24px;
+        }
+        nav {
+            display: flex;
+            justify-content: center;
+            margin: 20px 0;
+        }
+        nav a {
+            margin: 0 15px;
+            text-decoration: none;
+            color: #6b7db3;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            padding: 20px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        .section-title {
+            font-size: 20px;
+            margin-bottom: 10px;
+            color: #555;
+        }
+        .note-board, .self-harm-tracker, .support-request {
+            margin: 20px 0;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #6b7db3;
+            color: white;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        Welcome to The Ellie Project
+    </header>
+    <nav>
+        <a href="#note-board">Note Board</a>
+        <a href="#self-harm-tracker">Self-Harm Tracker</a>
+        <a href="#support-request">Support Requests</a>
+    </nav>
+
+    <div class="container">
+        <section id="note-board" class="note-board">
+            <h2 class="section-title">Note Board</h2>
+            <p>Share your thoughts and feelings anonymously.</p>
+            <textarea rows="4" cols="50" placeholder="Write something..."></textarea>
+            <button>Post</button>
+        </section>
+
+        <section id="self-harm-tracker" class="self-harm-tracker">
+            <h2 class="section-title">Self-Harm Tracker</h2>
+            <p>Log your feelings privately.</p>
+            <form>
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date">
+                <br><br>
+                <label for="feelings">Feelings:</label>
+                <select id="feelings" name="feelings">
+                    <option value="sad">Sad</option>
+                    <option value="anxious">Anxious</option>
+                    <option value="angry">Angry</option>
+                    <option value="happy">Happy</option>
+                </select>
+                <br><br>
+                <label for="notes">Notes:</label><br>
+                <textarea id="notes" rows="4" cols="50" placeholder="Describe your feelings..."></textarea>
+                <br><br>
+                <button type="submit">Save Entry</button>
+            </form>
+        </section>
+
+        <section id="support-request" class="support-request">
+            <h2 class="section-title">Support Requests</h2>
+            <p>Ask for support from the community.</p>
+            <textarea rows="4" cols="50" placeholder="What do you need help with?"></textarea>
+            <button>Request Support</button>
+        </section>
+    </div>
+
+    <footer>
+        &copy; 2025 The Ellie Project. All rights reserved.
+    </footer>
+</body>
+</html>
